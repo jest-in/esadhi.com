@@ -2,6 +2,7 @@
 @media (max-width: 300px) {
     *{
         font-size: 30%;
+        overflow: hidden;
     }
 
     .index-header{
@@ -63,6 +64,7 @@
 @media (max-width: 576px) {
     *{
         font-size: 55%;
+        overflow: hidden;
     }
 
     .index-header{
