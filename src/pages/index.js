@@ -7,6 +7,8 @@ import boy3 from "../assets/boy-3.png";
 import boy4 from "../assets/boy-4.png";
 import logoBlack from "../assets/logo-black.svg";
 import logoWhite from "../assets/logo-white.svg";
+import hamberger from "../assets/hamberger-open.svg";
+import hambergerClose from "../assets/hamberger-close.svg";
 
 export default function Index() {
   return (
@@ -16,18 +18,32 @@ export default function Index() {
           <img className="index-logo-black" src={logoBlack} alt="logo" />
         </Link>
         <nav className="index-nav-bar">
+          <button>
+            <img src={hamberger} alt="hamberger" />
+          </button>
+          <button>
+            <img src={hambergerClose} alt="hamberger-close" />
+          </button>
           <ul className="index-nav-links">
             <li>
-              <Link className="index-nav" to="/">Home</Link>
+              <Link className="index-nav" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link className="index-nav" to="#catalog">Catalog</Link>
+              <Link className="index-nav" to="#catalog">
+                Catalog
+              </Link>
             </li>
             <li>
-              <Link className="index-nav" to="#about-us">About Us</Link>
+              <Link className="index-nav" to="#about-us">
+                About Us
+              </Link>
             </li>
             <li>
-              <Link className="index-nav" to="#contact-us">Contact Us</Link>
+              <Link className="index-nav" to="#contact-us">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </nav>
@@ -136,19 +152,13 @@ export default function Index() {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="#catalog">
-                Catalog
-              </NavLink>
+              <NavLink to="#catalog">Catalog</NavLink>
             </li>
             <li>
-              <NavLink to="#about-us">
-                About Us
-              </NavLink>
+              <NavLink to="#about-us">About Us</NavLink>
             </li>
             <li>
-              <NavLink to="#contact-us">
-                Contact Us
-              </NavLink>
+              <NavLink to="#contact-us">Contact Us</NavLink>
             </li>
           </ul>
         </nav>
