@@ -153,3 +153,101 @@ html::-webkit-scrollbar-thumb {
 .index-hero-caption-mark2{
   align-self: flex-end;
 }
+
+#catalog{
+  display: flex;
+  max-width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index-img-2{
+  max-width: 400px;
+}
+
+.index-catalog-container{
+  display: flex;
+}
+
+.index-catalog-div1{
+  display: flex;
+  flex-direction: column;
+}
+
+.index-catalog-div2{
+  display: flex;
+  flex-direction: column;
+}
+
+.index-catalog-1{
+  min-width: 350px;
+  min-height: 200px;
+  background: radial-gradient(136.9% 136.9% at 50% -24.63%, rgba(238, 9, 121, 0.97) 0%, rgba(255, 106, 0, 0.52) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.index-catalog-1 h3{
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.index-catalog-1 p{
+  font-size: 3rem;
+}
+
+.index-catalog-2{
+  min-width: 350px;
+  min-height: 200px;
+  background: linear-gradient(100.96deg, #A770EF -6.26%, rgba(253, 185, 155, 0) 117.3%);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.index-catalog-2 h3{
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.index-catalog-2 p{
+  font-size: 3rem;
+  color: var(--color-secondary);
+}
+
+.index-catalog-1:hover, .index-catalog-2:hover{
+  scale: 105%;
+  cursor: pointer;
+}
+
+.section-heading-catalog{
+  /* transform: rotate(-90deg); */
+  /* transform-origin: 0 0; */
+  /* overflow: hidden; */
+  /* transform-box: fill-box; */
+  font-size: 15rem;
+  font-weight: 900;
+  color: #B3C3D2;
+  justify-self: flex-end;
+  writing-mode: vertical-rl;
+  margin-right: -40px;
+}

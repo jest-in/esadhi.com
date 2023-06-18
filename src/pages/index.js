@@ -59,25 +59,33 @@ export default function Index() {
 
           <img className="index-img-1" src={boy1} alt="boy-1" />
         </div>
+        
         <section id="catalog">
-            <img src={boy2} alt="boy-2" />
-            <h2>Catalog</h2>
-          <article>
-            <h3>Essence</h3>
-            <p>Under $2500</p>
-          </article>
-          <article>
-            <h3>Elevate</h3>
-            <p>Under $5000</p>
-          </article>
-          <article>
-            <h3>Radiance</h3>
-            <p>Under $15000</p>
-          </article>
-          <article>
-            <h3>Prestige</h3>
-            <p>Under $50000</p>
-          </article>
+          
+          <img className="index-img-2" src={boy2} alt="boy-2" />
+          <div className="index-catalog-container">
+            <div className="index-catalog-div1">
+              <article className="index-catalog-1">
+                <h3>Essence</h3>
+                <p>Under ₹2500</p>
+              </article>
+              <article className="index-catalog-2">
+                <h3>Elevate</h3>
+                <p>Under $5000</p>
+              </article>
+            </div>
+            <div className="index-catalog-div2">
+              <article className="index-catalog-2">
+                <h3>Radiance</h3>
+                <p>Under $15000</p>
+              </article>
+              <article className="index-catalog-1">
+                <h3>Prestige</h3>
+                <p>Under $50000</p>
+              </article>
+            </div>
+          </div>
+          <h2 className="section-heading-catalog">CATALOG</h2>
         </section>
 
         <section id="about-us">
