@@ -1,38 +1,38 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
+import boy1 from "../assets/boy-1.png";
+import boy2 from "../assets/boy-2.png";
+import boy3 from "../assets/boy-3.png";
+import boy4 from "../assets/boy-4.png";
+import logoBlack from "../assets/logo-black.svg";
+import logoWhite from "../assets/logo-white.svg";
+
 export default function Index() {
-  let anchorRef = React.createRef();
   return (
     <div className="index-container">
       <header>
-        {/* Place logo here */}
+        <Link to="/">
+          <img src={logoBlack} alt="logo" />
+        </Link>
         <nav>
           <ul>
-            <li>
-              <Link to="/">E-Sadhi</Link>
-            </li>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="#catalog">
-                Catalog
-              </Link>
+              <Link to="#catalog">Catalog</Link>
             </li>
             <li>
-              <Link to="#about-us">
-                About Us
-              </Link>
+              <Link to="#about-us">About Us</Link>
             </li>
             <li>
-              <Link to="#contact-us">
-                Contact Us
-              </Link>
+              <Link to="#contact-us">Contact Us</Link>
             </li>
           </ul>
         </nav>
       </header>
+
       <main>
         <aside>
           <p>
@@ -40,7 +40,10 @@ export default function Index() {
           </p>
         </aside>
 
+        <img src={boy1} alt="boy-1" />
+
         <section id="catalog">
+          <img src={boy2} alt="boy-2" />
           <h2>Catalog</h2>
           <article>
             <h3>Essence</h3>
@@ -79,9 +82,11 @@ export default function Index() {
             all your shopping desires. Shop with us and let us redefine your
             online shopping experience.
           </p>
+          <img src={boy3} alt="boy-3" />
         </section>
 
         <section id="contact-us">
+          <img src={boy4} alt="boy-4" />
           <h2>Contact Us</h2>
           <section>
             <h3>Unleash Your Voice</h3>
@@ -114,10 +119,10 @@ export default function Index() {
             </dl>
           </address>
         </section>
-        {/* lorem*5000 */}
       </main>
+
       <footer>
-        {/* section for logo */}
+        <img src={logoWhite} alt="logo" />
         <p>&copy; esadhi.com. All rights reserved.</p>
         <p>
           Our website is infused with cookies to create a delightful browsing
@@ -131,17 +136,17 @@ export default function Index() {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="#catalog" innerRef={anchorRef}>
+              <NavLink to="#catalog">
                 Catalog
               </NavLink>
             </li>
             <li>
-              <NavLink to="#about-us" innerRef={anchorRef}>
+              <NavLink to="#about-us">
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink to="#contact-us" innerRef={anchorRef}>
+              <NavLink to="#contact-us">
                 Contact Us
               </NavLink>
             </li>
