@@ -294,3 +294,32 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
 }
+
+#contact-us{
+  display: flex;
+  min-width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index-contact-us-container{
+  display: flex;
+}
+
+.index-img-3{
+  max-width: 280px;
+}
+
+.contact-us-form-header{
+  font-size: 5rem;
+}
+
+.section-heading-contactus{
+  font-size: 10rem;
+  font-weight: 900;
+  color: #B3C3D2;
+  justify-self: flex-end;
+  writing-mode: vertical-rl;
+  margin-right: -20px;
+}
