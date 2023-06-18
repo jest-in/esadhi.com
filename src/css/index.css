@@ -87,7 +87,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .hamberger-open, .hamberger-close{
-  /* display: none; */
+  display: none;
   background: none;
   border: none;
 }
