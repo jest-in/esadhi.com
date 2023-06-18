@@ -160,6 +160,11 @@
     .section-heading-catalog{
         font-size: 10rem;
     }
+
+    #catalog{
+        height: auto;
+        margin-top: 50px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
