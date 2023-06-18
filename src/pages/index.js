@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 export default function Index() {
   let anchorRef = React.createRef();
   return (
-    <div>
+    <div className="index-container">
       <header>
         {/* Place logo here */}
         <nav>
