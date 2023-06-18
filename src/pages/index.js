@@ -18,10 +18,10 @@ export default function Index() {
           <img className="index-logo-black" src={logoBlack} alt="logo" />
         </Link>
         <nav className="index-nav-bar">
-          <button>
+          <button className="hamberger-open">
             <img src={hamberger} alt="hamberger" />
           </button>
-          <button>
+          <button className="hamberger-close">
             <img src={hambergerClose} alt="hamberger-close" />
           </button>
           <ul className="index-nav-links">

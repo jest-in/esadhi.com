@@ -83,6 +83,13 @@ html::-webkit-scrollbar-thumb {
 
 .index-nav-bar{
   min-width: 40%;
+  display: flex;
+}
+
+.hamberger-open, .hamberger-close{
+  /* display: none; */
+  background: none;
+  border: none;
 }
 
 .index-nav-links{
