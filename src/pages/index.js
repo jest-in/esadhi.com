@@ -11,23 +11,23 @@ import logoWhite from "../assets/logo-white.svg";
 export default function Index() {
   return (
     <div className="index-container">
-      <header>
+      <header className="index-header">
         <Link to="/">
-          <img src={logoBlack} alt="logo" />
+          <img className="index-logo-black" src={logoBlack} alt="logo" />
         </Link>
-        <nav>
-          <ul>
+        <nav className="index-nav-bar">
+          <ul className="index-nav-links">
             <li>
-              <Link to="/">Home</Link>
+              <Link className="index-nav" to="/">Home</Link>
             </li>
             <li>
-              <Link to="#catalog">Catalog</Link>
+              <Link className="index-nav" to="#catalog">Catalog</Link>
             </li>
             <li>
-              <Link to="#about-us">About Us</Link>
+              <Link className="index-nav" to="#about-us">About Us</Link>
             </li>
             <li>
-              <Link to="#contact-us">Contact Us</Link>
+              <Link className="index-nav" to="#contact-us">Contact Us</Link>
             </li>
           </ul>
         </nav>

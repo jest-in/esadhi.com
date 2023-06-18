@@ -3,9 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-    //font-size: 62.5%;
+    font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    scrollbar-color: #B9A0EC #111;
+    scrollbar-width: thin;
 }
 
 :root {
@@ -31,6 +34,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 /* code {
@@ -38,10 +42,65 @@ body {
     monospace;
 } */
 
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #B9A0EC;
+    border-radius: 50px;
+}
+
 .index-container{
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column  ;
   background-color: var(--color-background);
+}
+
+.index-header{
+  min-width: 100%;
+  min-height: 50px;
+  padding: 30px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index-logo-black{
+  max-width: 200px;
+  transition: 0.2s ease-in-out;
+}
+
+.index-logo-black:hover{
+  filter: invert(47%) sepia(40%) saturate(2091%) hue-rotate(355deg) brightness(96%) contrast(113%);
+}
+
+.index-nav-bar{
+  min-width: 40%;
+}
+
+.index-nav-links{
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 5rem;
+}
+
+.index-nav{
+  text-decoration: none;
+  color: #8395A7;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+}
+
+.index-nav:hover{
+  color: #FF6A00;
 }
