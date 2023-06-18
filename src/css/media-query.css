@@ -18,6 +18,20 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    *{
+        font-size: 50%;
+    }
+
+    .index-header{
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .index-logo-black{
+        max-width: 150px;
+    }
 
 }
 
