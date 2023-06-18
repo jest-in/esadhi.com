@@ -89,25 +89,29 @@ export default function Index() {
         </section>
 
         <section id="about-us">
-          <h2>About Us</h2>
-          <p>
-            Discover a world of convenience and style at Esadhi.com. We are your
-            premier online shopping destination, offering a wide range of
-            products across categories such as fashion, electronics, home decor,
-            and more. With a commitment to quality and customer satisfaction, we
-            strive to provide you with a seamless shopping experience. Our
-            curated collection features trusted brands and exquisite designs,
-            ensuring that you find exactly what you're looking for. At
-            Esadhi.com, we prioritize your needs and offer dedicated customer
-            support to assist you at every step. Join us today and embark on a
-            journey of unparalleled convenience and endless possibilities.
-          </p>
-          <p>
-            Thank you for choosing Esadhi.com as your preferred destination for
-            all your shopping desires. Shop with us and let us redefine your
-            online shopping experience.
-          </p>
-          <img src={boy3} alt="boy-3" />
+          <div className="about-us-container">
+          <h2 className="section-heading-aboutus">ABOUT US</h2>
+          <div className="catalog-about-us-content">
+            <p>
+              Discover a world of convenience and style at Esadhi.com. We are your
+              premier online shopping destination, offering a wide range of
+              products across categories such as fashion, electronics, home decor,
+              and more. With a commitment to quality and customer satisfaction, we
+              strive to provide you with a seamless shopping experience. Our
+              curated collection features trusted brands and exquisite designs,
+              ensuring that you find exactly what you're looking for. At
+              esadhi.com, we prioritize your needs and offer dedicated customer
+              support to assist you at every step. Join us today and embark on a
+              journey of unparalleled convenience and endless possibilities.
+            </p>
+            <p className="about-us-para2">
+              Thank you for choosing esadhi.com as your preferred destination for
+              all your shopping desires. Shop with us and let us redefine your
+              online shopping experience.
+            </p>
+          </div>
+          </div>
+          <img className="index-img-3" src={boy3} alt="boy-3" />
         </section>
 
         <section id="contact-us">

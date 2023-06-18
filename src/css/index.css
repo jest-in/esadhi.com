@@ -251,3 +251,46 @@ html::-webkit-scrollbar-thumb {
   writing-mode: vertical-rl;
   margin-right: -40px;
 }
+
+#about-us{
+  min-width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-heading-aboutus{
+  font-size: 15rem;
+  font-weight: 900;
+  color: #B3C3D2;
+  writing-mode: vertical-rl;
+  margin-left: -50px;
+}
+
+.catalog-about-us-content{
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  background: radial-gradient(136.9% 136.9% at 50% -24.63%, rgba(238, 9, 121, 0.97) 0%, rgba(255, 106, 0, 0.52) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12.5px);
+  border-radius: 20px;
+  line-height: 90%;
+  padding: 50px;
+  min-width: 60%;
+}
+
+.about-us-para2{
+  margin-top: 50px;
+}
+
+.index-img-3{
+  max-width: 320px;
+}
+
+.about-us-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
