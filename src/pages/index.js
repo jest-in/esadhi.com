@@ -50,17 +50,18 @@ export default function Index() {
       </header>
 
       <main>
-        <aside>
-          <p>
-            Discover a world of poddibilities where every desire finds its match
-          </p>
-        </aside>
+        <div className="hero-sec">
+          <aside>
+            <p className="index-hero-caption">
+              <span>Discover a world of</span> <span className="index-hero-caption-sec1">POSSIBILITIES</span> <span>where every desire finds its</span> <span className="index-hero-caption-sec2">PERFECT MATCH</span>
+            </p>
+          </aside>
 
-        <img src={boy1} alt="boy-1" />
-
+          <img className="index-img-1" src={boy1} alt="boy-1" />
+        </div>
         <section id="catalog">
-          <img src={boy2} alt="boy-2" />
-          <h2>Catalog</h2>
+            <img src={boy2} alt="boy-2" />
+            <h2>Catalog</h2>
           <article>
             <h3>Essence</h3>
             <p>Under $2500</p>

@@ -111,3 +111,45 @@ html::-webkit-scrollbar-thumb {
 .index-nav:hover{
   color: #FF6A00;
 }
+
+.hero-sec{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+.index-hero-caption{
+  font-size: 10rem;
+  display: flex;
+  flex-direction: column;
+  line-height: -2;
+  font-weight: 800;
+}
+
+.index-hero-caption-sec1,.index-hero-caption-sec2{
+  background: radial-gradient(126.53% 15108.51% at 0% 100%, #EE0979 0%, #FF6A00 61.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 7.5rem;
+}
+
+.index-hero-caption-sec2{
+  align-self: flex-end;
+}
+
+.index-hero-caption-mark1, .index-hero-caption-mark2{
+  line-height: 0.6;
+  font-size: 12rem;
+}
+
+.index-img-1{
+  max-width: 400px;
+}
+
+.index-hero-caption-mark2{
+  align-self: flex-end;
+}

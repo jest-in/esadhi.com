@@ -1,7 +1,7 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 300px) {
     *{
-        font-size: 55%;
+        font-size: 30%;
     }
 
     .index-header{
@@ -44,6 +44,18 @@
 
     .index-nav:hover{
         color: #000;
+    }
+
+    .hero-sec{
+        flex-direction: column;
+    }
+
+    .index-hero-caption{
+        font-size: 8rem;
+    }
+
+    .index-hero-caption-sec1,.index-hero-caption-sec2{
+        font-size: 6.5rem;
     }
 }
 
@@ -94,6 +106,18 @@
 
     .index-nav:hover{
         color: #000;
+    }
+
+    .hero-sec{
+        flex-direction: column;
+    }
+
+    .index-hero-caption{
+        font-size: 8rem;
+    }
+
+    .index-hero-caption-sec1,.index-hero-caption-sec2{
+        font-size: 6.5rem;
     }
 }
 
