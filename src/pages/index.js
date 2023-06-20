@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavHashLink as Link } from "react-router-hash-link";
 
 import boy1 from "../assets/boy-1.png";
 import boy2 from "../assets/boy-2.png";
@@ -149,16 +149,16 @@ export default function Index() {
         <nav>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <NavLink to="#catalog">Catalog</NavLink>
+              <Link to="#catalog">Catalog</Link>
             </li>
             <li>
-              <NavLink to="#about-us">About Us</NavLink>
+              <Link to="#about-us">About Us</Link>
             </li>
             <li>
-              <NavLink to="#contact-us">Contact Us</NavLink>
+              <Link to="#contact-us">Contact Us</Link>
             </li>
           </ul>
         </nav>
