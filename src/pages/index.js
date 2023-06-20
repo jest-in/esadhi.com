@@ -13,7 +13,7 @@ import hambergerClose from "../assets/hamberger-close.svg";
 export default function Index() {
   return (
     <div className="index-container">
-      <header className="index-header">
+      <header id="hero" className="index-header">
         <Link to="/">
           <img className="index-logo-black" src={logoBlack} alt="logo" />
         </Link>
@@ -26,7 +26,7 @@ export default function Index() {
           </button>
           <ul className="index-nav-links">
             <li>
-              <Link className="index-nav" to="/">
+              <Link className="index-nav" to="#hero">
                 Home
               </Link>
             </li>
@@ -163,19 +163,21 @@ export default function Index() {
         </section>
       </main>
 
-      <footer>
-        <img src={logoWhite} alt="logo" />
-        <p>&copy; esadhi.com. All rights reserved.</p>
-        <p>
-          Our website is infused with cookies to create a delightful browsing
-          experience on Esadhi.com. By savoring these digital treats, you
-          consent to their usage. For more information, please explore our
-          Cookie Policy.
-        </p>
+      <footer className="index-footer-container">
+        <img className="footer-logo" src={logoWhite} alt="logo" />
+        <div className="index-footer-copyright-div">
+          <p className="index-footer-copyright">&copy; esadhi.com. All rights reserved.</p>
+          <p>
+            Our website is infused with cookies to create a delightful browsing
+            experience on Esadhi.com. By savoring these digital treats, you
+            consent to their usage. For more information, please explore our
+            Cookie Policy.
+          </p>
+        </div>
         <nav>
-          <ul>
+          <ul className="index-footer-nav-div">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="#hero">Home</Link>
             </li>
             <li>
               <Link to="#catalog">Catalog</Link>

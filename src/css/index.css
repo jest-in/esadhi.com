@@ -423,3 +423,55 @@ html::-webkit-scrollbar-thumb {
   font-style: normal;
   font-size: 2.5rem;
 }
+
+.index-footer-container{
+  background-color: var(--color-primary);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.index-footer-copyright-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 40%;
+}
+
+.index-footer-copyright-div p{
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  line-height: 25px;
+  text-align: center;
+}
+
+.index-footer-copyright{
+  font-weight: 700;
+}
+
+.index-footer-nav-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.index-footer-nav-div li{
+  padding: 5px;
+}
+
+.index-footer-nav-div li a{
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.index-footer-nav-div li a:hover{
+  color: #FF6A00;
+}
+
+.footer-logo{
+  max-width: 250px;
+}
