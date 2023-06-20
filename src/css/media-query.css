@@ -1,7 +1,7 @@
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 300px) {
+@media (max-width: 450px) {
     *{
-        font-size: 30%;
+        font-size: 40%;
         overflow-x: hidden;
     }
 
@@ -18,14 +18,15 @@
         flex-direction: column;
         background: linear-gradient(180deg, rgba(238, 9, 121, 0.52) 0%, rgba(255, 106, 0, 0.603699) 100%);
         box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(5px);
         /* Note: backdrop-filter has minimal browser support */
         border-radius: 7px;
         padding: 10px 30px 50px 50px;
-        position: sticky;
+        position: fixed;
         top: 20px;
         right: 0;
         min-width: 70%;
+        min-height: 300px;
         z-index: 100;
     }
 
@@ -44,8 +45,8 @@
     }
 
     .index-nav{
-        font-size: 2.3rem;
         color: #fff;
+        font-size: 2.3rem;
     }
 
     .index-nav:hover{
@@ -63,10 +64,138 @@
     .index-hero-caption-sec1,.index-hero-caption-sec2{
         font-size: 6.5rem;
     }
+
+    .index-catalog-container{
+        flex-direction: column;
+    }
+
+    .index-catalog-1 h3, .index-catalog-2 h3{
+        font-size: 3rem;
+    }
+
+    .index-catalog-1 p, .index-catalog-2 p{
+        font-size: 1.5rem;
+    }
+
+    .index-img-1{
+        max-width: 250px;
+    }
+
+    .index-img-2{
+        max-width: 200px;
+        margin-left: -30px;
+    }
+
+    .index-catalog-1, .index-catalog-2{
+        min-width: 100px;
+        min-height: 70px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 10px 5px;
+    }
+
+    .section-heading-catalog{
+        font-size: 8rem;
+        margin-right: -15px;
+    }
+
+    #catalog{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    #about-us{
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .catalog-about-us-content{
+        font-size: 3rem;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .section-heading-aboutus{
+        font-size: 8rem;
+        margin-left: -35px;
+    }
+
+    .about-us-para2{
+        margin-top: 20px;
+    }
+
+    .index-img-3{
+        max-width: 200px;
+    }
+
+    #contact-us{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .index-img-4{
+        max-width: 100px;
+    }
+
+    .contact-us-form-input-div1, .contact-us-form-input-div2{
+        flex-direction: column;
+    }
+
+    .contact-us-form-header{
+        font-size: 3rem;
+    }
+
+    .index-contact-us-container{
+        flex-direction: column;
+    }
+
+    .contact-us-form-input-div1 input, .contact-us-form-input-div2 input{
+        min-height: 10px;
+        min-width: 50px;
+        font-size: 1.4rem;
+    }
+
+    .section-heading-contactus{
+        font-size:8rem;
+        min-width: fit-content;
+        margin-left: 5px;
+    }
+
+    .index-contactus-address-container{
+        padding: 20px;
+        box-shadow: none;
+        margin-left: 0;
+    }
+
+    .index-contact-us-div1 dt{
+        font-size: 1.5rem;
+    }
+
+    .index-contact-us-div1 dd a{
+        font-size: 1.8rem;
+    }
+
+    .index-contact-us-div1 dd{
+        font-size: 1.8rem;
+    }
+
+    .index-footer-container{
+        flex-direction: column;
+    }
+
+    .index-footer-copyright-div{
+        max-width: 90%;
+        margin: 30px 0;
+    }
+
+    .footer-logo{
+        max-width: 180px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media (min-width: 450px) and (max-width: 576px) {
     *{
         font-size: 55%;
         overflow-x: hidden;
@@ -189,19 +318,627 @@
     .index-img-3{
         max-width: 220px;
     }
+
+    #contact-us{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .index-img-4{
+        max-width: 150px;
+    }
+
+    .contact-us-form-input-div1, .contact-us-form-input-div2{
+        flex-direction: column;
+    }
+
+    .contact-us-form-header{
+        font-size: 3rem;
+    }
+
+    .index-contact-us-container{
+        flex-direction: column;
+    }
+
+    .contact-us-form-input-div1 input, .contact-us-form-input-div2 input{
+        min-height: 10px;
+        min-width: 50px;
+        font-size: 1.4rem;
+    }
+
+    .section-heading-contactus{
+        font-size:8rem;
+        min-width: fit-content;
+        margin-left: 5px;
+    }
+
+    .index-contactus-address-container{
+        padding: 20px;
+        box-shadow: none;
+        margin-left: 0;
+    }
+
+    .index-contact-us-div1 dt{
+        font-size: 1.5rem;
+    }
+
+    .index-contact-us-div1 dd a{
+        font-size: 1.8rem;
+    }
+
+    .index-contact-us-div1 dd{
+        font-size: 1.8rem;
+    }
+
+    .index-footer-container{
+        flex-direction: column;
+    }
+
+    .index-footer-copyright-div{
+        max-width: 90%;
+        margin: 30px 0;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-    
+@media (min-width: 576px) and (max-width: 768px) {
+   *{
+        font-size: 55%;
+        overflow-x: hidden;
+    }
+
+    .index-header{
+        padding: 30px 0 30px 50px;
+        align-items: flex-start;
+    }
+
+    .index-logo-black{
+        max-width: 150px;
+    }
+
+    .index-nav-bar{
+        flex-direction: column;
+        background: linear-gradient(180deg, rgba(238, 9, 121, 0.52) 0%, rgba(255, 106, 0, 0.603699) 100%);
+        box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 7px;
+        padding: 10px 30px 50px 50px;
+        position: fixed;
+        top: 20px;
+        right: 0;
+        min-width: 70%;
+        min-height: 300px;
+        z-index: 100;
+    }
+
+    .hamberger-open, .hamberger-close{
+        display: block;
+        align-self: flex-end;
+    }
+
+    .index-nav-links{
+        flex-direction: column;
+        padding: 30px 0 20px 0;
+    }
+
+    .index-nav-links li{
+        margin-top: 30px;
+    }
+
+    .index-nav{
+        color: #fff;
+        font-size: 2.3rem;
+    }
+
+    .index-nav:hover{
+        color: #000;
+    }
+
+    .hero-sec{
+        flex-direction: column;
+    }
+
+    .index-hero-caption{
+        font-size: 8rem;
+    }
+
+    .index-hero-caption-sec1,.index-hero-caption-sec2{
+        font-size: 6.5rem;
+    }
+
+    .index-catalog-container{
+        flex-direction: column;
+    }
+
+    .index-catalog-1 h3, .index-catalog-2 h3{
+        font-size: 3rem;
+    }
+
+    .index-catalog-1 p, .index-catalog-2 p{
+        font-size: 1.5rem;
+    }
+
+    .index-img-2{
+        max-width: 320px;
+        margin-left: -20px;
+    }
+
+    .index-catalog-1, .index-catalog-2{
+        min-width: 180px;
+        min-height: 120px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 10px 5px;
+    }
+
+    .section-heading-catalog{
+        font-size: 11rem;
+        margin-right: -30px;
+    }
+
+    #catalog{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    #about-us{
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .catalog-about-us-content{
+        font-size: 2.2rem;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .section-heading-aboutus{
+        font-size: 10rem;
+        margin-left: -80px;
+    }
+
+    .about-us-para2{
+        margin-top: 20px;
+    }
+
+    .index-img-3{
+        max-width: 250px;
+    }
+
+    #contact-us{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .index-img-4{
+        max-width: 200px;
+    }
+
+    .contact-us-form-input-div1, .contact-us-form-input-div2{
+        flex-direction: column;
+    }
+
+    .contact-us-form-header{
+        font-size: 3rem;
+    }
+
+    .index-contact-us-container{
+        flex-direction: column;
+    }
+
+    .contact-us-form-input-div1 input, .contact-us-form-input-div2 input{
+        min-height: 10px;
+        min-width: 50px;
+        font-size: 1.4rem;
+    }
+
+    .section-heading-contactus{
+        font-size:8rem;
+        min-width: fit-content;
+        margin-left: 5px;
+    }
+
+    .index-contactus-address-container{
+        padding: 20px;
+        box-shadow: none;
+        margin-left: 0;
+    }
+
+    .index-contact-us-div1 dt{
+        font-size: 1.5rem;
+    }
+
+    .index-contact-us-div1 dd a{
+        font-size: 1.8rem;
+    }
+
+    .index-contact-us-div1 dd{
+        font-size: 1.8rem;
+    }
+
+    .index-footer-container{
+        flex-direction: column;
+    }
+
+    .index-footer-copyright-div{
+        max-width: 90%;
+        margin: 30px 0;
+    } 
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+    *{
+        font-size: 55%;
+        overflow-x: hidden;
+    }
 
+    .index-nav-bar{
+        min-width: 55%;
+        display: flex;
+    }
+
+    /* .index-header{
+        padding: 30px 0 30px 50px;
+        align-items: flex-start;
+    } */
+
+    .index-logo-black{
+        max-width: 180px;
+    }
+
+    /* .hamberger-open, .hamberger-close{
+        display: block;
+        align-self: flex-end;
+    }
+
+    .index-nav-links{
+        flex-direction: column;
+        padding: 30px 0 20px 0;
+    }
+
+    .index-nav-links li{
+        margin-top: 30px;
+    }
+
+    .index-nav{
+        color: #fff;
+        font-size: 2.3rem;
+    }
+
+    .index-nav:hover{
+        color: #000;
+    } */
+
+    /* .hero-sec{
+        flex-direction: column;
+    } */
+
+    .index-hero-caption{
+        font-size: 8rem;
+    }
+
+    .index-hero-caption-sec1,.index-hero-caption-sec2{
+        font-size: 6.5rem;
+    }
+
+    .index-img-1{
+        max-width: 250px;
+    }
+
+    /* .index-catalog-container{
+        flex-direction: column;
+    } */
+
+    .index-catalog-1 h3, .index-catalog-2 h3{
+        font-size: 4rem;
+    }
+
+    .index-catalog-1 p, .index-catalog-2 p{
+        font-size: 1.8rem;
+    }
+
+    .index-img-2{
+        max-width: 320px;
+        margin-left: -10px;
+    }
+
+    .index-catalog-1, .index-catalog-2{
+        min-width: 180px;
+        min-height: 120px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 20px 15px;
+    }
+
+    .section-heading-catalog{
+        font-size: 11rem;
+        margin-right: -30px;
+    }
+
+    #catalog{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    /* #about-us{
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+    } */
+
+    .catalog-about-us-content{
+        font-size: 3rem;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .section-heading-aboutus{
+        font-size: 10rem;
+        margin-left: -80px;
+    }
+
+    .about-us-para2{
+        margin-top: 20px;
+    }
+
+    .index-img-3{
+        min-width: 180px;
+    }
+
+    #contact-us{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .index-img-4{
+        max-width: 200px;
+    }
+
+    /* .contact-us-form-input-div1, .contact-us-form-input-div2{
+        flex-direction: column;
+    } */
+
+    .contact-us-form-header{
+        font-size: 3rem;
+    }
+
+    /* .index-contact-us-container{
+        flex-direction: column;
+    } */
+
+    .contact-us-form-input-div1 input, .contact-us-form-input-div2 input{
+        min-height: 10px;
+        min-width: 50px;
+        font-size: 1.4rem;
+    }
+
+    .section-heading-contactus{
+        font-size:8rem;
+        min-width: fit-content;
+        margin-left: 5px;
+    }
+
+    .index-contactus-address-container{
+        padding: 20px;
+        box-shadow: none;
+        margin-left: 10px;
+    }
+
+    .index-contact-us-div1 dt{
+        font-size: 1.5rem;
+    }
+
+    .index-contact-us-div1 dd a{
+        font-size: 1.8rem;
+    }
+
+    .index-contact-us-div1 dd{
+        font-size: 1.8rem;
+    }
+
+    /* .index-footer-container{
+        flex-direction: column;
+    } */
+
+    /* .index-footer-copyright-div{
+        max-width: 90%;
+        margin: 30px 0;
+    }  */
+    .footer-logo{
+        max-width: 200px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+    *{
+        font-size: 60%;
+        overflow-x: hidden;
+    }
 
+    .index-nav-bar{
+        min-width: 55%;
+        display: flex;
+    }
+
+    /* .index-header{
+        padding: 30px 0 30px 50px;
+        align-items: flex-start;
+    } */
+
+    .index-logo-black{
+        max-width: 180px;
+    }
+
+    /* .hamberger-open, .hamberger-close{
+        display: block;
+        align-self: flex-end;
+    }
+
+    .index-nav-links{
+        flex-direction: column;
+        padding: 30px 0 20px 0;
+    }
+
+    .index-nav-links li{
+        margin-top: 30px;
+    }
+
+    .index-nav{
+        color: #fff;
+        font-size: 2.3rem;
+    }
+
+    .index-nav:hover{
+        color: #000;
+    } */
+
+    /* .hero-sec{
+        flex-direction: column;
+    } */
+
+    .index-hero-caption{
+        font-size: 8rem;
+    }
+
+    .index-hero-caption-sec1,.index-hero-caption-sec2{
+        font-size: 6.5rem;
+    }
+
+    .index-img-1{
+        max-width: 300px;
+    }
+
+    /* .index-catalog-container{
+        flex-direction: column;
+    } */
+
+    .index-catalog-1 h3, .index-catalog-2 h3{
+        font-size: 4rem;
+    }
+
+    .index-catalog-1 p, .index-catalog-2 p{
+        font-size: 1.8rem;
+    }
+
+    .index-img-2{
+        max-width: 400px;
+        /* margin-left: -10px; */
+    }
+
+    .index-catalog-1, .index-catalog-2{
+        min-width: 220px;
+        min-height: 130px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 20px 15px;
+    }
+
+    .section-heading-catalog{
+        font-size: 11rem;
+        margin-right: -30px;
+    }
+
+    #catalog{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    /* #about-us{
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+    } */
+
+    .catalog-about-us-content{
+        font-size: 3rem;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .section-heading-aboutus{
+        font-size: 10rem;
+        margin-left: -80px;
+    }
+
+    .about-us-para2{
+        margin-top: 20px;
+    }
+
+    .index-img-3{
+        min-width: 180px;
+    }
+
+    #contact-us{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .index-img-4{
+        max-width: 200px;
+    }
+
+    /* .contact-us-form-input-div1, .contact-us-form-input-div2{
+        flex-direction: column;
+    } */
+
+    .contact-us-form-header{
+        font-size: 3rem;
+    }
+
+    /* .index-contact-us-container{
+        flex-direction: column;
+    } */
+
+    .contact-us-form-input-div1 input, .contact-us-form-input-div2 input{
+        min-height: 10px;
+        min-width: 50px;
+        font-size: 1.4rem;
+    }
+
+    .section-heading-contactus{
+        font-size:8rem;
+        min-width: fit-content;
+        margin-left: 5px;
+    }
+
+    .index-contactus-address-container{
+        padding: 20px;
+        box-shadow: none;
+        margin-left: 10px;
+    }
+
+    .index-contact-us-div1 dt{
+        font-size: 1.5rem;
+    }
+
+    .index-contact-us-div1 dd a{
+        font-size: 1.8rem;
+    }
+
+    .index-contact-us-div1 dd{
+        font-size: 1.8rem;
+    }
+
+    /* .index-footer-container{
+        flex-direction: column;
+    } */
+
+    /* .index-footer-copyright-div{
+        max-width: 90%;
+        margin: 30px 0;
+    }  */
+    .footer-logo{
+        max-width: 200px;
+    }
 }
+
+/* @media (min-width: 1200px){
+    *{
+        font-size: 60%;
+        overflow-x: hidden;
+    }
+} */
