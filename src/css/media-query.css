@@ -1,43 +1,199 @@
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
+@media (max-width: 300px) {
     *{
-        font-size: 50%;
+        font-size: 30%;
+        overflow-x: hidden;
     }
 
     .index-header{
-        padding: 30px 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        padding: 30px 0 30px 50px;
+        align-items: flex-start;
     }
 
     .index-logo-black{
         max-width: 150px;
+    }
+
+    .index-nav-bar{
+        flex-direction: column;
+        background: linear-gradient(180deg, rgba(238, 9, 121, 0.52) 0%, rgba(255, 106, 0, 0.603699) 100%);
+        box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(3px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 7px;
+        padding: 10px 30px 50px 50px;
+        position: sticky;
+        top: 20px;
+        right: 0;
+        min-width: 70%;
+        z-index: 100;
+    }
+
+    .hamberger-open, .hamberger-close{
+        display: block;
+        align-self: flex-end;
+    }
+
+    .index-nav-links{
+        flex-direction: column;
+        padding: 30px 0 20px 0;
+    }
+
+    .index-nav-links li{
+        margin-top: 30px;
+    }
+
+    .index-nav{
+        font-size: 2.3rem;
+        color: #fff;
+    }
+
+    .index-nav:hover{
+        color: #000;
+    }
+
+    .hero-sec{
+        flex-direction: column;
+    }
+
+    .index-hero-caption{
+        font-size: 8rem;
+    }
+
+    .index-hero-caption-sec1,.index-hero-caption-sec2{
+        font-size: 6.5rem;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     *{
-        font-size: 50%;
+        font-size: 55%;
+        overflow-x: hidden;
     }
 
     .index-header{
-        padding: 30px 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        padding: 30px 0 30px 50px;
+        align-items: flex-start;
     }
 
     .index-logo-black{
         max-width: 150px;
     }
 
+    .index-nav-bar{
+        flex-direction: column;
+        background: linear-gradient(180deg, rgba(238, 9, 121, 0.52) 0%, rgba(255, 106, 0, 0.603699) 100%);
+        box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 7px;
+        padding: 10px 30px 50px 50px;
+        position: fixed;
+        top: 20px;
+        right: 0;
+        min-width: 70%;
+        min-height: 300px;
+        z-index: 100;
+    }
+
+    .hamberger-open, .hamberger-close{
+        display: block;
+        align-self: flex-end;
+    }
+
+    .index-nav-links{
+        flex-direction: column;
+        padding: 30px 0 20px 0;
+    }
+
+    .index-nav-links li{
+        margin-top: 30px;
+    }
+
+    .index-nav{
+        color: #fff;
+        font-size: 2.3rem;
+    }
+
+    .index-nav:hover{
+        color: #000;
+    }
+
+    .hero-sec{
+        flex-direction: column;
+    }
+
+    .index-hero-caption{
+        font-size: 8rem;
+    }
+
+    .index-hero-caption-sec1,.index-hero-caption-sec2{
+        font-size: 6.5rem;
+    }
+
+    .index-catalog-container{
+        flex-direction: column;
+    }
+
+    .index-catalog-1 h3, .index-catalog-2 h3{
+        font-size: 3rem;
+    }
+
+    .index-catalog-1 p, .index-catalog-2 p{
+        font-size: 1.5rem;
+    }
+
+    .index-img-2{
+        max-width: 250px;
+        margin-left: -50px;
+    }
+
+    .index-catalog-1, .index-catalog-2{
+        min-width: 150px;
+        min-height: 100px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 10px 5px;
+    }
+
+    .section-heading-catalog{
+        font-size: 10rem;
+    }
+
+    #catalog{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    #about-us{
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .catalog-about-us-content{
+        font-size: 2rem;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .section-heading-aboutus{
+        font-size: 8rem;
+    }
+
+    .about-us-para2{
+        margin-top: 20px;
+    }
+
+    .index-img-3{
+        max-width: 220px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-
+    
 }
 
 /* Large devices (desktops, 992px and up) */

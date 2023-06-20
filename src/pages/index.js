@@ -18,10 +18,10 @@ export default function Index() {
           <img className="index-logo-black" src={logoBlack} alt="logo" />
         </Link>
         <nav className="index-nav-bar">
-          <button>
+          <button className="hamberger-open">
             <img src={hamberger} alt="hamberger" />
           </button>
-          <button>
+          <button className="hamberger-close">
             <img src={hambergerClose} alt="hamberger-close" />
           </button>
           <ul className="index-nav-links">
@@ -50,90 +50,109 @@ export default function Index() {
       </header>
 
       <main>
-        <aside>
-          <p>
-            Discover a world of poddibilities where every desire finds its match
-          </p>
-        </aside>
+        <div className="hero-sec">
+          <aside>
+            <p className="index-hero-caption">
+              <span>Discover a world of</span> <span className="index-hero-caption-sec1">POSSIBILITIES</span> <span>where every desire finds its</span> <span className="index-hero-caption-sec2">PERFECT MATCH</span>
+            </p>
+          </aside>
 
-        <img src={boy1} alt="boy-1" />
-
+          <img className="index-img-1" src={boy1} alt="boy-1" />
+        </div>
+        
         <section id="catalog">
-          <img src={boy2} alt="boy-2" />
-          <h2>Catalog</h2>
-          <article>
-            <h3>Essence</h3>
-            <p>Under $2500</p>
-          </article>
-          <article>
-            <h3>Elevate</h3>
-            <p>Under $5000</p>
-          </article>
-          <article>
-            <h3>Radiance</h3>
-            <p>Under $15000</p>
-          </article>
-          <article>
-            <h3>Prestige</h3>
-            <p>Under $50000</p>
-          </article>
+          
+          <img className="index-img-2" src={boy2} alt="boy-2" />
+          <div className="index-catalog-container">
+            <div className="index-catalog-div1">
+              <article className="index-catalog-1">
+                <h3>Essence</h3>
+                <p>Under ₹2500</p>
+              </article>
+              <article className="index-catalog-2">
+                <h3>Elevate</h3>
+                <p>Under $5000</p>
+              </article>
+            </div>
+            <div className="index-catalog-div2">
+              <article className="index-catalog-2">
+                <h3>Radiance</h3>
+                <p>Under $15000</p>
+              </article>
+              <article className="index-catalog-1">
+                <h3>Prestige</h3>
+                <p>Under $50000</p>
+              </article>
+            </div>
+          </div>
+          <h2 className="section-heading-catalog">CATALOG</h2>
         </section>
 
         <section id="about-us">
-          <h2>About Us</h2>
-          <p>
-            Discover a world of convenience and style at Esadhi.com. We are your
-            premier online shopping destination, offering a wide range of
-            products across categories such as fashion, electronics, home decor,
-            and more. With a commitment to quality and customer satisfaction, we
-            strive to provide you with a seamless shopping experience. Our
-            curated collection features trusted brands and exquisite designs,
-            ensuring that you find exactly what you're looking for. At
-            Esadhi.com, we prioritize your needs and offer dedicated customer
-            support to assist you at every step. Join us today and embark on a
-            journey of unparalleled convenience and endless possibilities.
-          </p>
-          <p>
-            Thank you for choosing Esadhi.com as your preferred destination for
-            all your shopping desires. Shop with us and let us redefine your
-            online shopping experience.
-          </p>
-          <img src={boy3} alt="boy-3" />
+          <div className="about-us-container">
+          <h2 className="section-heading-aboutus">ABOUT US</h2>
+          <div className="catalog-about-us-content">
+            <p>
+              Discover a world of convenience and style at Esadhi.com. We are your
+              premier online shopping destination, offering a wide range of
+              products across categories such as fashion, electronics, home decor,
+              and more. With a commitment to quality and customer satisfaction, we
+              strive to provide you with a seamless shopping experience. Our
+              curated collection features trusted brands and exquisite designs,
+              ensuring that you find exactly what you're looking for. At
+              esadhi.com, we prioritize your needs and offer dedicated customer
+              support to assist you at every step. Join us today and embark on a
+              journey of unparalleled convenience and endless possibilities.
+            </p>
+            <p className="about-us-para2">
+              Thank you for choosing esadhi.com as your preferred destination for
+              all your shopping desires. Shop with us and let us redefine your
+              online shopping experience.
+            </p>
+          </div>
+          </div>
+          <img className="index-img-3" src={boy3} alt="boy-3" />
         </section>
 
         <section id="contact-us">
-          <img src={boy4} alt="boy-4" />
-          <h2>Contact Us</h2>
-          <section>
-            <h3>Unleash Your Voice</h3>
-            <form>
-              <input type="text" name="name" placeholder="Name" />
-              <input type="number" placeholder="Phone" />
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="Place" />
-              <textarea
-                name="message"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-              ></textarea>
-              <button>Submit</button>
-            </form>
-          </section>
-          <address>
-            <dl>
-              <dt>Contact</dt>
-              <dd>
-                <a href="tel:+919876054321">9876054321</a>
-              </dd>
-              <dt>Email</dt>
-              <dd>
-                <a href="mailto:connect@esadhi.com">connect@esadhi.com</a>
-              </dd>
-              <dt>Address</dt>
-              <dd>Belthangadi,Karnataka</dd>
-            </dl>
-          </address>
+          <img className="index-img-3" src={boy4} alt="boy-4" />
+          <div className="index-contact-us-container">
+            <section>
+              <h3 className="contact-us-form-header">Unleash Your Voice</h3>
+              <form>
+                <div>
+                  <input type="text" name="name" placeholder="Name" />
+                  <input type="number" placeholder="Phone" />
+                </div>
+                <div>
+                  <input type="email" placeholder="Email" />
+                  <input type="text" placeholder="Place" />
+                </div>
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+                <button>Submit</button>
+              </form>
+            </section>
+            <address>
+              <dl>
+                <dt>Contact</dt>
+                <dd>
+                  <a href="tel:+919876054321">9876054321</a>
+                </dd>
+                <dt>Email</dt>
+                <dd>
+                  <a href="mailto:connect@esadhi.com">connect@esadhi.com</a>
+                </dd>
+                <dt>Address</dt>
+                <dd>Belthangadi,Karnataka</dd>
+              </dl>
+            </address>
+          </div>
+          <h2 className="section-heading-contactus">CONTACT US</h2>
         </section>
       </main>
 
