@@ -11,13 +11,11 @@ import hamberger from "../assets/hamberger-open.svg";
 import hambergerClose from "../assets/hamberger-close.svg";
 
 export default function Index() {
-  const [hambergerState, setHambergerState] = useState(window.screen.width<=576?'':'hidden');
+  const [hambergerState, setHambergerState] = useState(window.screen.width<=768?'':'hidden');
   function toggleHambergerState(){
     setHambergerState(hambergerState?'':'hidden');
   }
-  useEffect(()=>{
-    window.addEventListener('blur',()=>setHambergerState(''));
-  });  
+ 
   return (
     <div className="index-container">
       <header id="hero" className="index-header">
