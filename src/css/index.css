@@ -323,3 +323,98 @@ html::-webkit-scrollbar-thumb {
   writing-mode: vertical-rl;
   margin-right: -20px;
 }
+
+.contact-us-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-form-input-div1, .contact-us-form-input-div2{
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-us-form-input-div1 input, .contact-us-form-input-div2 input{
+  min-height: 40px;
+  min-width: 250px;
+  margin: 5px 10px 10px 0;
+  border: 2px solid #464646;
+  border-radius: 3px;
+  background-color: var(--color-background);
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 12px 10px;
+}
+
+.contact-us-form-input-div1 input:focus, .contact-us-form-input-div2 input:focus, .index-form-textarea:focus{
+  outline: none;
+  border: 2px solid rgba(238, 9, 121, 0.97);
+}
+
+.index-form-textarea{
+  margin: 5px 10px 10px 0;
+  border: 2px solid #464646;
+  border-radius: 3px;
+  background-color: var(--color-background);
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 12px 10px;
+}
+
+.index-form-submit-btn{
+  background-color: #FF6A00;
+  border-radius: 3px;
+  font-size: 1.7rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  padding: 10px 25px;
+  border: none;
+  width: min-content;
+  align-self: flex-end;
+  margin: 5px 10px 10px 0;
+  transition: 0.2s ease-in-out;
+}
+
+.index-form-submit-btn:hover{
+  cursor: pointer;
+  background-color: #464646;
+}
+
+.index-contactus-address-container{
+  display: flex;
+  color: var(--color-secondary);
+  background: radial-gradient(136.9% 136.9% at 50% -24.63%, rgba(238, 9, 121, 0.97) 0%, rgba(255, 106, 0, 0.52) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12.5px);
+  border-radius: 20px;
+  height: fit-content;
+  padding: 50px;
+}
+
+.index-contact-us-div1{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.index-contact-us-div1 dt{
+  font-size: 2rem;
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.index-contact-us-div1 dd a{
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+.index-contact-us-div1 dd{
+  color: var(--color-secondary);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+}

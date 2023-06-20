@@ -189,6 +189,50 @@
     .index-img-3{
         max-width: 220px;
     }
+
+    .index-img-4{
+        max-width: 150px;
+    }
+
+    .contact-us-form-input-div1, .contact-us-form-input-div2{
+        flex-direction: column;
+    }
+
+    .contact-us-form-header{
+        font-size: 3rem;
+    }
+
+    .index-contact-us-container{
+        flex-direction: column;
+    }
+
+    .contact-us-form-input-div1 input, .contact-us-form-input-div2 input{
+        min-height: 10px;
+        min-width: 50px;
+        font-size: 1.4rem;
+    }
+
+    .section-heading-contactus{
+        font-size:8rem;
+        min-width: fit-content;
+        margin-left: 5px;
+    }
+
+    .index-contactus-address-container{
+        padding: 20px;
+    }
+
+    .index-contact-us-div1 dt{
+        font-size: 1.5rem;
+    }
+
+    .index-contact-us-div1 dd a{
+        font-size: 1.8rem;
+    }
+
+    .index-contact-us-div1 dd{
+        font-size: 1.8rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */

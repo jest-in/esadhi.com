@@ -115,40 +115,47 @@ export default function Index() {
         </section>
 
         <section id="contact-us">
-          <img className="index-img-3" src={boy4} alt="boy-4" />
+          <img className="index-img-4" src={boy4} alt="boy-4" />
           <div className="index-contact-us-container">
             <section>
               <h3 className="contact-us-form-header">Unleash Your Voice</h3>
-              <form>
-                <div>
+              <form className="contact-us-form">
+                <div className="contact-us-form-input-div1">
                   <input type="text" name="name" placeholder="Name" />
-                  <input type="number" placeholder="Phone" />
+                  <input type="tel" placeholder="Phone" />
                 </div>
-                <div>
+                <div className="contact-us-form-input-div2">
                   <input type="email" placeholder="Email" />
                   <input type="text" placeholder="Place" />
                 </div>
                 <textarea
+                  className="index-form-textarea"
                   name="message"
                   cols="30"
-                  rows="10"
+                  rows="6"
                   placeholder="Message"
                 ></textarea>
-                <button>Submit</button>
+                <button className="index-form-submit-btn">Submit</button>
               </form>
             </section>
-            <address>
+            <address className="index-contactus-address-container">
               <dl>
-                <dt>Contact</dt>
-                <dd>
-                  <a href="tel:+919876054321">9876054321</a>
-                </dd>
-                <dt>Email</dt>
-                <dd>
-                  <a href="mailto:connect@esadhi.com">connect@esadhi.com</a>
-                </dd>
-                <dt>Address</dt>
-                <dd>Belthangadi,Karnataka</dd>
+                <div className="index-contact-us-div1">
+                  <dt>Contact</dt>
+                  <dd>
+                    <a href="tel:+919876054321">9876054321</a>
+                  </dd>
+                </div>
+                <div className="index-contact-us-div1">
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:connect@esadhi.com">connect@esadhi.com</a>
+                  </dd>
+                </div>
+                <div className="index-contact-us-div1">
+                  <dt>Address</dt>
+                  <dd>Belthangadi,Karnataka</dd>
+                </div>
               </dl>
             </address>
           </div>
