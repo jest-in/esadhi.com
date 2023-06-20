@@ -325,7 +325,7 @@ html::-webkit-scrollbar-thumb {
   color: #B3C3D2;
   justify-self: flex-end;
   writing-mode: vertical-rl;
-  margin-right: -20px;
+  margin-right: -15px;
 }
 
 .contact-us-form{

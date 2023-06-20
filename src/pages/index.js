@@ -122,7 +122,7 @@ export default function Index() {
               <form className="contact-us-form">
                 <div className="contact-us-form-input-div1">
                   <input type="text" name="name" placeholder="Name" />
-                  <input type="tel" placeholder="Phone" />
+                  <input type="tel" placeholder="Phone" maxLength="10"/>
                 </div>
                 <div className="contact-us-form-input-div2">
                   <input type="email" placeholder="Email" />
