@@ -55,6 +55,10 @@ html::-webkit-scrollbar-thumb {
     border-radius: 50px;
 }
 
+.hidden{
+  display: none !important;
+}
+
 .index-container{
   min-width: 100vw;
   min-height: 100vh;
