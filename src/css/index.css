@@ -315,6 +315,10 @@ html::-webkit-scrollbar-thumb {
   font-size: 5rem;
 }
 
+.index-img-4{
+  max-width: 280px;
+}
+
 .section-heading-contactus{
   font-size: 10rem;
   font-weight: 900;
@@ -389,6 +393,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 20px;
   height: fit-content;
   padding: 50px;
+  margin-left: 50px;
 }
 
 .index-contact-us-div1{
@@ -397,8 +402,8 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 40px;
 }
 
-.index-contact-us-div1 dt{
-  font-size: 2rem;
+  .index-contact-us-div1 dt{
+    font-size: 2rem;
   color: var(--color-secondary);
   font-weight: 700;
   font-style: normal;

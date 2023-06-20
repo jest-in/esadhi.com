@@ -190,6 +190,11 @@
         max-width: 220px;
     }
 
+    #contact-us{
+        height: auto;
+        margin-top: 50px;
+    }
+
     .index-img-4{
         max-width: 150px;
     }
@@ -220,6 +225,8 @@
 
     .index-contactus-address-container{
         padding: 20px;
+        box-shadow: none;
+        margin-left: 0;
     }
 
     .index-contact-us-div1 dt{
