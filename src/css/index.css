@@ -50,6 +50,7 @@ html::-webkit-scrollbar-track {
     background-color: #111;
 }
 
+
 html::-webkit-scrollbar-thumb {
     background-color: #B9A0EC;
     border-radius: 50px;
@@ -479,3 +480,125 @@ html::-webkit-scrollbar-thumb {
 .footer-logo{
   max-width: 250px;
 }
+
+
+/* Catalog Start
+------------------------------------------------------------------------------ */
+
+.catalog-container{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column  ;
+  background-color: var(--color-background);
+}
+
+.catalogue-header{
+  min-width: 100%;
+  min-height: fit-content;
+  padding: 50px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalogue-header-logo{
+  max-width: 200px;
+  transition: 0.2s ease-in-out;
+}
+
+.catalogue-header-logo:hover{
+  filter: invert(47%) sepia(40%) saturate(2091%) hue-rotate(355deg) brightness(96%) contrast(113%);
+}
+
+.catalogue-header-caption{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalogue-header-caption h1{
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: radial-gradient(126.53% 15108.51% at 0% 100%, #EE0979 0%, #FF6A00 61.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.catalogue-header-caption p{
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.catalogue-header-search-bar{
+  font-size: 1.8rem;
+  background-color: var(--color-background);
+  border: 2px solid #464646;
+  padding: 8px 10px;
+  outline: none;
+}
+
+.catalogue-header-search-bar:focus{
+  border: 2px solid rgba(238, 9, 121, 0.97);
+}
+
+.catalogue-content-container{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+}
+
+.catalogue-product-container{
+  max-width: 48%;
+  display: flex;
+  padding: 30px;
+  margin: 10px;
+  /* border: 2px  dashed #4646469e; */
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.52);
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.catalogue-product-container:hover{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  scale: 103%;
+}
+
+.catalogue-product-desc-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.catalogue-product-image{
+  max-width: 250px;
+  height: auto;
+}
+
+.catalogue-product-desc-div h2{
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: radial-gradient(126.53% 15108.51% at 0% 100%, #EE0979 0%, #FF6A00 61.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.catalogue-product-desc-div p{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* Catalog End
+------------------------------------------------------------------------------ */
