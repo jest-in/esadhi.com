@@ -26,13 +26,13 @@ export default function Index() {
     try {
       const response = await fetch(
         // "https://script.google.com/macros/s/AKfycbwScPYNtU9algc2dWaHTzBj-Wu4s3muZUSRpBG6xa7I_46rdu5Ro7ysJnhgQ3RecBjW9g/exec",
-        "https://formsubmit.co/your@email.com",
+        "https://formsubmit.co/9e32a3c5f14f5713ec09c1cdb4313eb4",
         {
           method: "POST",
           body: formData,
         }
       );
-      const result = await response.json();
+      const result = await response;
       console.log("Success:", result);
     } catch (error) {
       console.error("Error:", error);
@@ -191,10 +191,12 @@ export default function Index() {
               <form
                 className="contact-us-form"
                 method="post"
-                action="https://formsubmit.co/bc896c599b306b12e37042b0c0395f3c "
-                // onSubmit={submitButtonHandler}
+                // action="https://formsubmit.co/nakopoj611@aaorsi.com "
+                onSubmit={submitButtonHandler}
               >
-                <input type="hidden" name="_captcha" value="false"></input>
+                <input type="hidden" name="_subject" value="New submission at esadhi.com" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_captcha" value="false" />
                 <div className="contact-us-form-input-div1">
                   <input type="text" name="name" placeholder="Name" />
                   <input
@@ -205,7 +207,12 @@ export default function Index() {
                   />
                 </div>
                 <div className="contact-us-form-input-div2">
-                  <input name="email" type="email" placeholder="Email" />
+                  <input
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                  />
                   <input name="place" type="text" placeholder="Place" />
                 </div>
                 <textarea
