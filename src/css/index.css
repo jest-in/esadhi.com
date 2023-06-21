@@ -95,6 +95,11 @@ html::-webkit-scrollbar-thumb {
   display: none;
   background: none;
   border: none;
+  scale: 120%;
+}
+
+.hamberger-open{
+  margin-right: 30px;
 }
 
 .index-nav-links{
@@ -200,15 +205,18 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   margin: 20px;
   transition: 0.2s ease-in-out;
+  
 }
 
 .index-catalog-1 h3{
   font-size: 6rem;
   font-weight: 600;
+  color: var(--color-primary);
 }
 
 .index-catalog-1 p{
   font-size: 3rem;
+  color: var(--color-primary);
 }
 
 .index-catalog-2{
