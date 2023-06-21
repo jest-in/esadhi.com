@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link as AnchorLink } from "react-router-dom";
 import { NavHashLink as Link } from "react-router-hash-link";
 
 import boy1 from "../assets/boy-1.png";
@@ -24,7 +25,8 @@ export default function Index() {
   async function post(formData) {
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwScPYNtU9algc2dWaHTzBj-Wu4s3muZUSRpBG6xa7I_46rdu5Ro7ysJnhgQ3RecBjW9g/exec",
+        // "https://script.google.com/macros/s/AKfycbwScPYNtU9algc2dWaHTzBj-Wu4s3muZUSRpBG6xa7I_46rdu5Ro7ysJnhgQ3RecBjW9g/exec",
+        "https://formsubmit.co/your@email.com",
         {
           method: "POST",
           body: formData,
@@ -123,24 +125,32 @@ export default function Index() {
           <img className="index-img-2" src={boy2} alt="boy-2" />
           <div className="index-catalog-container">
             <div className="index-catalog-div1">
-              <article className="index-catalog-1">
-                <h3>Essence</h3>
-                <p>Under ₹2500</p>
-              </article>
-              <article className="index-catalog-2">
-                <h3>Elevate</h3>
-                <p>Under $5000</p>
-              </article>
+              <AnchorLink to="essence">
+                <article className="index-catalog-1">
+                  <h3>Essence</h3>
+                  <p>Under ₹2500</p>
+                </article>
+              </AnchorLink>
+              <AnchorLink to="elevate">
+                <article className="index-catalog-2">
+                  <h3>Elevate</h3>
+                  <p>Under $5000</p>
+                </article>
+              </AnchorLink>
             </div>
             <div className="index-catalog-div2">
-              <article className="index-catalog-2">
-                <h3>Radiance</h3>
-                <p>Under $15000</p>
-              </article>
-              <article className="index-catalog-1">
-                <h3>Prestige</h3>
-                <p>Under $50000</p>
-              </article>
+              <AnchorLink to="radiance">
+                <article className="index-catalog-2">
+                  <h3>Radiance</h3>
+                  <p>Under $15000</p>
+                </article>
+              </AnchorLink>
+              <AnchorLink to="prestige">
+                <article className="index-catalog-1">
+                  <h3>Prestige</h3>
+                  <p>Under $50000</p>
+                </article>
+              </AnchorLink>
             </div>
           </div>
           <h2 className="section-heading-catalog">CATALOG</h2>
@@ -181,11 +191,18 @@ export default function Index() {
               <form
                 className="contact-us-form"
                 method="post"
-                onSubmit={submitButtonHandler}
+                action="https://formsubmit.co/bc896c599b306b12e37042b0c0395f3c "
+                // onSubmit={submitButtonHandler}
               >
+                <input type="hidden" name="_captcha" value="false"></input>
                 <div className="contact-us-form-input-div1">
                   <input type="text" name="name" placeholder="Name" />
-                  <input name="phone" type="tel" placeholder="Phone" maxLength="10" />
+                  <input
+                    name="phone"
+                    type="tel"
+                    placeholder="Phone"
+                    maxLength="10"
+                  />
                 </div>
                 <div className="contact-us-form-input-div2">
                   <input name="email" type="email" placeholder="Email" />
