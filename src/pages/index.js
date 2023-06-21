@@ -21,6 +21,25 @@ export default function Index() {
     if (e.target !== nav.current && e.target !== openButton.current && !nav.current.contains(e.target))
       setHambergerState("");
   }
+  async function post(formData) {
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbwScPYNtU9algc2dWaHTzBj-Wu4s3muZUSRpBG6xa7I_46rdu5Ro7ysJnhgQ3RecBjW9g/exec",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+      const result = await response.json();
+      console.log("Success:", result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+  function submitButtonHandler(e){
+    e.preventDefault();
+    post(new FormData(e.target));
+  }
   useEffect(()=>{
     window.addEventListener('click',handleClickOutside);
     return () => window.removeEventListener("click", handleClickOutside);
@@ -159,14 +178,18 @@ export default function Index() {
           <div className="index-contact-us-container">
             <section>
               <h3 className="contact-us-form-header">Unleash Your Voice</h3>
-              <form className="contact-us-form">
+              <form
+                className="contact-us-form"
+                method="post"
+                onSubmit={submitButtonHandler}
+              >
                 <div className="contact-us-form-input-div1">
                   <input type="text" name="name" placeholder="Name" />
-                  <input type="tel" placeholder="Phone" maxLength="10" />
+                  <input name="phone" type="tel" placeholder="Phone" maxLength="10" />
                 </div>
                 <div className="contact-us-form-input-div2">
-                  <input type="email" placeholder="Email" />
-                  <input type="text" placeholder="Place" />
+                  <input name="email" type="email" placeholder="Email" />
+                  <input name="place" type="text" placeholder="Place" />
                 </div>
                 <textarea
                   className="index-form-textarea"
