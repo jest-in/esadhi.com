@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
 
 import boy1 from "../assets/boy-1.png";
@@ -11,45 +11,74 @@ import hamberger from "../assets/hamberger-open.svg";
 import hambergerClose from "../assets/hamberger-close.svg";
 
 export default function Index() {
+  const nav=useRef(null);
+  const openButton = useRef(null);
   const [hambergerState, setHambergerState] = useState(window.screen.width<=768?'':'hidden');
   function toggleHambergerState(){
     setHambergerState(hambergerState?'':'hidden');
   }
+  function handleClickOutside(e) {
+    if (e.target !== nav.current && e.target !== openButton.current && !nav.current.contains(e.target))
+      setHambergerState("");
+  }
+  useEffect(()=>{
+    window.addEventListener('click',handleClickOutside);
+    return () => window.removeEventListener("click", handleClickOutside);
+  })
  
   return (
     <div className="index-container">
       <header id="hero" className="index-header">
-        <Link onClick={()=>setHambergerState('')} to="/">
+        <Link onClick={() => setHambergerState("")} to="/">
           <img className="index-logo-black" src={logoBlack} alt="logo" />
         </Link>
         <button
           className={`hamberger-open ${hambergerState}`}
           onClick={toggleHambergerState}
         >
-          <img src={hamberger} alt="hamberger" />
+          <img ref={openButton} src={hamberger} alt="hamberger" />
         </button>
-        <nav className={`index-nav-bar ${hambergerState?'':'hidden'}`}>
+        <nav
+          ref={nav}
+          className={`index-nav-bar ${hambergerState ? "" : "hidden"}`}
+        >
           <button className="hamberger-close" onClick={toggleHambergerState}>
             <img src={hambergerClose} alt="hamberger-close" />
           </button>
           <ul className="index-nav-links">
             <li>
-              <Link onClick={()=>setHambergerState('')} className="index-nav" to="#hero">
+              <Link
+                onClick={() => setHambergerState("")}
+                className="index-nav"
+                to="#hero"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link onClick={()=>setHambergerState('')} className="index-nav" to="#catalog">
+              <Link
+                onClick={() => setHambergerState("")}
+                className="index-nav"
+                to="#catalog"
+              >
                 Catalog
               </Link>
             </li>
             <li>
-              <Link onClick={()=>setHambergerState('')} className="index-nav" to="#about-us">
+              <Link
+                onClick={() => setHambergerState("")}
+                className="index-nav"
+                to="#about-us"
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link onClick={()=>setHambergerState('')} className="index-nav" to="#contact-us">
+              <Link
+                onClick={() => setHambergerState("")}
+                className="index-nav"
+                to="#contact-us"
+              >
                 Contact Us
               </Link>
             </li>
@@ -133,7 +162,7 @@ export default function Index() {
               <form className="contact-us-form">
                 <div className="contact-us-form-input-div1">
                   <input type="text" name="name" placeholder="Name" />
-                  <input type="tel" placeholder="Phone" maxLength="10"/>
+                  <input type="tel" placeholder="Phone" maxLength="10" />
                 </div>
                 <div className="contact-us-form-input-div2">
                   <input type="email" placeholder="Email" />
@@ -177,7 +206,9 @@ export default function Index() {
       <footer className="index-footer-container">
         <img className="footer-logo" src={logoWhite} alt="logo" />
         <div className="index-footer-copyright-div">
-          <p className="index-footer-copyright">&copy; esadhi.com. All rights reserved.</p>
+          <p className="index-footer-copyright">
+            &copy; esadhi.com. All rights reserved.
+          </p>
           <p>
             Our website is infused with cookies to create a delightful browsing
             experience on Esadhi.com. By savoring these digital treats, you
