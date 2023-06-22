@@ -19,7 +19,12 @@ export default function Index() {
     setHambergerState(hambergerState?'':'hidden');
   }
   function handleClickOutside(e) {
-    if (e.target !== nav.current && e.target !== openButton.current && !nav.current.contains(e.target))
+    if (window.screen.width<=768 && e.target !== nav.current && e.target !== openButton.current && !nav.current.contains(e.target))
+      setHambergerState("");
+  }
+  function hideMenu(){
+    console.log(window.screen.width <= 768);
+    if (window.screen.width <= 768)
       setHambergerState("");
   }
   async function post(formData) {
@@ -50,9 +55,9 @@ export default function Index() {
   return (
     <div className="index-container">
       <header id="hero" className="index-header">
-        <Link onClick={() => setHambergerState("")} to="/">
+        <AnchorLink to="/">
           <img className="index-logo-black" src={logoBlack} alt="logo" />
-        </Link>
+        </AnchorLink>
         <button
           className={`hamberger-open ${hambergerState}`}
           onClick={toggleHambergerState}
@@ -69,7 +74,7 @@ export default function Index() {
           <ul className="index-nav-links">
             <li>
               <Link
-                onClick={() => setHambergerState("")}
+                onClick={hideMenu}
                 className="index-nav"
                 to="#hero"
               >
@@ -78,7 +83,7 @@ export default function Index() {
             </li>
             <li>
               <Link
-                onClick={() => setHambergerState("")}
+                onClick={hideMenu}
                 className="index-nav"
                 to="#catalog"
               >
@@ -87,7 +92,7 @@ export default function Index() {
             </li>
             <li>
               <Link
-                onClick={() => setHambergerState("")}
+                onClick={hideMenu}
                 className="index-nav"
                 to="#about-us"
               >
@@ -96,7 +101,7 @@ export default function Index() {
             </li>
             <li>
               <Link
-                onClick={() => setHambergerState("")}
+                onClick={hideMenu}
                 className="index-nav"
                 to="#contact-us"
               >
